@@ -1,0 +1,34 @@
+// 225.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+ int poten(int x, int y);  //cuerpo principal
+
+  void main()
+  {
+	  int x,y;
+	  cin>>x;
+	  cin>>y;
+	  
+	  cout<<"mostrar:"<<poten(x,y);
+	  while(true);
+  }
+
+
+
+  // declaraciones
+   int poten(int x, int y)
+   {
+	   int c=1,i;
+
+		   for(i=1;i<=y;i++)
+			   c=c*x;
+			    return c; //salida
+
+   }
+
